@@ -351,10 +351,10 @@ A atividade estabelece essas três plataformas como meios de publicação do pro
 `https://github.com/jpedrotorres/Projeto-Saude-Publica-G1`
 
 **GitHub Pages:**
-
+`https://jpedrotorres.github.io/Projeto-Saude-Publica-G1/`
 
 **Dashboard Streamlit:**
-
+`https://projeto-saude-publica-g1.streamlit.app/`
 
 ---
 
