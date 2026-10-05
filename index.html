@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Indicadores de Saúde Pública no Brasil
+    </title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #1f2937;
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.6rem;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #1f2937;
+        }
+
+        .identificacao {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .identificacao p {
+            margin-bottom: 8px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        .botoes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .botao {
+            display: inline-block;
+            text-decoration: none;
+            background: #2563eb;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .botao:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .ancora_footer {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        footer {
+            background: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        .destaque {
+            background: #e8f0fe;
+            border-left: 5px solid #2563eb;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         CABEÇALHO
+    ====================================================== -->
+
+    <header>
+
+        <h1>
+            🏥 Indicadores de Saúde Pública no Brasil
+        </h1>
+
+        <p>
+            Projeto acadêmico de análise de dados com Python,
+            visualizações e dashboard interativo em Streamlit.
+        </p>
+
+    </header>
+
+
+    <main class="container">
+
+
+        <!-- =================================================
+             IDENTIFICAÇÃO
+        ================================================== -->
+
+        <section>
+
+            <h2>
+                Identificação
+            </h2>
+
+            <div class="identificacao">
+
+                <!--
+                    Preencha os dados abaixo conforme
+                    as informações do trabalho.
+                -->
+
+                <p>
+                    <strong>Discente:</strong>
+                    João Pedro de Farias Torres de Souza
+                </p>
+
+                <p>
+                    <strong>Disciplina:</strong>
+                    Linguagens de Programação
+                </p>
+
+                <p>
+                    <strong>Docente:</strong>
+                    Alexandre Neves Louzada
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SOBRE O PROJETO
+        ================================================== -->
+
+        <section>
+
+            <h2>
+                Sobre o projeto
+            </h2>
+
+            <p>
+                Este projeto realiza uma análise exploratória e
+                visualização dos indicadores de saúde pública
+                presentes na base de dados utilizada no trabalho.
+            </p>
+
+            <br>
+
+            <p>
+                O objetivo é explorar o comportamento dos indicadores
+                ao longo do período analisado, permitindo comparações
+                entre regiões, estados e demais dimensões presentes
+                na base de dados.
+            </p>
+
+            <br>
+
+            <p>
+                A análise utiliza técnicas de manipulação,
+                agregação, visualização e análise estatística dos
+                dados, complementadas por um dashboard interativo
+                desenvolvido com Streamlit.
+            </p>
+
+        </section>
+
+
+        <!-- =================================================
+             PRINCIPAIS ANÁLISES
+        ================================================== -->
+
+        <section>
+
+            <h2>
+                Principais análises
+            </h2>
+
+            <div class="cards">
+
+
+                <div class="card">
+
+                    <h3>
+                        📈 Evolução temporal
+                    </h3>
+
+                    <p>
+                        Análise do comportamento dos indicadores
+                        ao longo dos anos representados na base
+                        de dados.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        🗺️ Análise regional
+                    </h3>
+
+                    <p>
+                        Comparação dos indicadores de saúde entre
+                        as diferentes regiões e estados presentes
+                        nos dados.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        🏥 Infraestrutura
+                    </h3>
+
+                    <p>
+                        Análise da distribuição dos leitos
+                        hospitalares entre os estados representados
+                        na base.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        🔬 Correlação
+                    </h3>
+
+                    <p>
+                        Investigação das relações lineares entre
+                        os principais indicadores numéricos por
+                        meio de matriz de correlação e gráficos.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             INDICADORES
+        ================================================== -->
+
+        <section>
+
+            <h2>
+                Indicadores analisados
+            </h2>
+
+            <div class="cards">
+
+
+                <div class="card">
+
+                    <h3>
+                        Expectativa de vida
+                    </h3>
+
+                    <p>
+                        Indicador utilizado para analisar a
+                        expectativa de vida presente na base.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        Taxa de mortalidade
+                    </h3>
+
+                    <p>
+                        Indicador utilizado para analisar o
+                        comportamento da mortalidade nos
+                        diferentes recortes.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        Cobertura vacinal
+                    </h3>
+
+                    <p>
+                        Indicador relacionado à cobertura
+                        vacinal registrada nos dados.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        Taxa de internação
+                    </h3>
+
+                    <p>
+                        Indicador utilizado para analisar a
+                        taxa de internação presente na base.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        Médicos por 1.000 habitantes
+                    </h3>
+
+                    <p>
+                        Indicador relacionado à disponibilidade
+                        de médicos representada nos dados.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        Leitos hospitalares
+                    </h3>
+
+                    <p>
+                        Indicador utilizado na análise da
+                        infraestrutura hospitalar.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        Doenças crônicas
+                    </h3>
+
+                    <p>
+                        Indicador relacionado aos casos de
+                        doenças crônicas presentes na base.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        Nível de criticidade
+                    </h3>
+
+                    <p>
+                        Classificação utilizada para analisar
+                        os registros segundo o nível de
+                        criticidade disponível nos dados.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             TECNOLOGIAS
+        ================================================== -->
+
+        <section>
+
+            <h2>
+                Tecnologias utilizadas
+            </h2>
+
+            <div class="cards">
+
+
+                <div class="card">
+
+                    <h3>
+                        🐍 Python
+                    </h3>
+
+                    <p>
+                        Linguagem principal utilizada no
+                        desenvolvimento do projeto.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        📊 Pandas
+                    </h3>
+
+                    <p>
+                        Manipulação, tratamento e análise
+                        dos dados.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        📈 Matplotlib
+                    </h3>
+
+                    <p>
+                        Construção das visualizações
+                        utilizadas na análise.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        📉 Seaborn
+                    </h3>
+
+                    <p>
+                        Construção de visualizações
+                        estatísticas, incluindo heatmaps.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        🌐 Streamlit
+                    </h3>
+
+                    <p>
+                        Desenvolvimento do dashboard
+                        interativo.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        🗄️ SQLite
+                    </h3>
+
+                    <p>
+                        Persistência dos dados utilizados
+                        pela aplicação.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        📓 Jupyter
+                    </h3>
+
+                    <p>
+                        Desenvolvimento e documentação da
+                        análise exploratória dos dados.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             DASHBOARD
+        ================================================== -->
+
+        <section>
+
+            <h2>
+                Dashboard interativo
+            </h2>
+
+            <div class="destaque">
+
+                <p>
+                    O dashboard permite explorar os dados de forma
+                    interativa, utilizando filtros por período,
+                    região, estado, município e nível de criticidade.
+                </p>
+
+                <br>
+
+                <p>
+                    Os indicadores e visualizações são atualizados
+                    de acordo com o recorte selecionado pelo usuário.
+                </p>
+
+
+                <div class="botoes">
+
+                    <!--
+                        Substitua pelo endereço publicado
+                        do seu aplicativo Streamlit.
+                    -->
+
+                    <a
+                        href="SEU_LINK_STREAMLIT"
+                        class="botao"
+                        target="_blank"
+                    >
+                        Abrir Dashboard
+                    </a>
+
+
+                    <!--
+                        Substitua pelo endereço do seu
+                        repositório GitHub.
+                    -->
+
+                    <a
+                        href="https://github.com/jpedrotorres/Projeto-Saude-Publica-G1"
+                        class="botao"
+                        target="_blank"
+                    >
+                        Ver no GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             OBSERVAÇÃO
+        ================================================== -->
+
+        <section>
+
+            <h2>
+                Observação
+            </h2>
+
+            <p>
+                Os resultados apresentados neste projeto estão
+                restritos à base de dados utilizada na análise.
+            </p>
+
+            <br>
+
+            <p>
+                As interpretações realizadas no dashboard devem
+                ser compreendidas dentro do contexto e das
+                características dos dados disponibilizados
+                para o projeto.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         RODAPÉ
+    ====================================================== -->
+
+    <footer>
+
+        <p>
+            Projeto acadêmico desenvolvido por
+            <a href="https://github.com/jpedrotorres" class="ancora_footer">João Torres</a>
+        </p>
+
+        <p>
+            Linguagens de Programação —
+            <a href="https://github.com/AlexandreLouzada" class="ancora_footer">Alexandre Neves Louzada</a>
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
